@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REPPP Training Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(42, 50, 132, 0.85); /* REPPP dark overlay */
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 20px;
+      color: #ffffff;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .sport-btn {
+      background: #ffffff;
+      color: #2a3284;
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .sport-btn:hover {
+      background: #0077cc;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .sport-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.sport-card:hover {
+  transform: translateY(-5px);
+}
+
+.sport-desc {
+  margin-top: 15px;
+  color: #e0e0e0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="C:\Users\Manish Tomar\Downloads\videoplayback.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- Page Content -->
+  <div class="content">
+    <header>
+      <img src="C:\Users\Manish Tomar\Desktop\REPPP white& blue logo.png" alt="REPPP Logo" />
+      <h1>Choose Your Sport</h1>
+    </header>
+
+<div class="btn-container">
+  <div class="sport-card">
+    <button class="sport-btn" onclick="location.href='padel.html'">Padel</button>
+    <p class="sport-desc">Watch training videos to improve your footwork, timing, and wall shot control for competitive padel matches.</p>
+  </div>
+  <div class="sport-card">
+    <button class="sport-btn" onclick="location.href='pickleball.html'">Pickleball</button>
+    <p class="sport-desc">Learn how to master dinks, volleys, and quick transitions to elevate your pickleball skills efficiently.</p>
+  </div>
+</div>
+
+</body>
+</html>
